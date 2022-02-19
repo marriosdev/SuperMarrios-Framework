@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+
+error_reporting(E_ERROR | E_PARSE);
+
+include("vendor/autoload.php");
+require_once("components/CLI/src/Boundary.php");
+
+$command = new StdClass();
+
+if(isset($argv[1])){
+    if(preg_match("[:]", $argv[1])){
+        $command->type = explode(":", $argv[1])[0];
+        $command->action = explode(":", $argv[1])[1];
+    }
+    else{
+        $command->type = $argv[1];
+    }
+    if(isset($argv[2])){
+        $command->arg1 = $argv[2];
+    }
+    if(isset($argv[3])){
+        $command->arg2 = $argv[3];
+    }
+}
+start($command);
