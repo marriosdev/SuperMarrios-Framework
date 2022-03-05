@@ -1,7 +1,10 @@
 <?php
 
-$listCommand = include("config.php");
-$listCommand = $listCommand["suggestList"];
+require_once("constants.php");
+$configs = include("config.php");
+define("BASE_PATH", $configs["raiz"]."app");
+
+$listCommand = $configs["suggestList"];
 
 /**
  * [List commands class] 
@@ -13,6 +16,7 @@ Use Firulin\Captain;
 use Firulin\Commands\Command;
 use Firulin\Commands\Project;
 use Firulin\Commands\Cli;
+use Firulin\Commands\Make;
 
 function start($command)
 {
@@ -33,7 +37,8 @@ function start($command)
         case 'cmd':
             $captain->execute(Cli::class, $command);                
             break;
+        case 'make':
+            $captain->execute(Make::class, $command);                
+            break;
     }
 }
-
-

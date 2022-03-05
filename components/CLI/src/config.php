@@ -5,7 +5,7 @@ return [
      * By default the project name is: "App"
      * But you can change it to whatever name you like.
      */
-    "nameProject"=>"App",
+    "nameProject"=>"app",
     
 
 
@@ -13,7 +13,7 @@ return [
     /**
      * This is where your project will be created
      */
-    "raiz"=>explode("CLI", __DIR__)[0],
+    "raiz"=>explode("components", __DIR__)[0],
     
 
 
@@ -40,6 +40,10 @@ return [
         ],
         "cmd"=>[
             "create"
+        ],
+        "make"=>[
+            "controller",
+            "model"
         ]
     ], 
 
@@ -51,6 +55,7 @@ return [
      */
     "suggestList"=>[
         "project",
-        "cmd"
+        "cmd",
+        "make"
     ],
 ];
