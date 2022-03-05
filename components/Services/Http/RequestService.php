@@ -25,14 +25,11 @@ trait RequestService
         $this->_getInputsFromRequest();
         $this->_setInputAsClassProperty();
         $this->_getInput();
-    }    
+    }
 
-    /***
-     * Retorna um array com todos os inputs 
-     * 
-     * @return Array $inputs
-     * 
-    */
+    /**
+     * @return Array
+     */
     private function _getInput()
     {
         return $this->inputs;

@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Controllers;
+
+use SM\Core\SMController;
+
+class nameClass extends SMController
+{
+
+    public function index()
+    {
+    }
+}
