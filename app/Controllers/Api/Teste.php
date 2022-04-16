@@ -9,8 +9,7 @@ class Teste extends SMController
 
     public function index()
     {
-        echo $this->request->nome;
+        $this->helperLoader->load("FirstHelper");
+        teste();
     }
 }
-
-
