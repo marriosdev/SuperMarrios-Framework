@@ -1,10 +1,8 @@
 <?php
 
-namespace SM\Services\Http;
+namespace SM\Modules\Http\Request;
 
-use SM\Services\Http;
-
-trait RequestService
+trait RequestModule
 {
     /**
      * 

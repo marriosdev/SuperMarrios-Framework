@@ -1,6 +1,6 @@
 <?php
 
-namespace SM\Services\Http;
+namespace SM\Modules\Http\Response;
 
 class Response
 {
