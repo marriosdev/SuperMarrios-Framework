@@ -2,13 +2,13 @@
 
 namespace SM\Core;
 
-use SM\Services\Http\Request;
-use SM\Services\Http\Response;
+use SM\Modules\Http\Request\Request;
+use SM\Modules\Http\Response\Response;
 
 class SMController
 {
     /**
-     * @var object SM\Services\Http\Request
+     * @var object SM\Modules\Http\Request\Request
      */
     public $request;
 
