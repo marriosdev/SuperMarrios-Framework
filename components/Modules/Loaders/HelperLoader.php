@@ -10,7 +10,7 @@ class HelperLoader
     private String $pathHelpers;
 
     /**
-     * Helpers directory path
+     * Helper directory path
      */
     private String $pathHelper;
 
