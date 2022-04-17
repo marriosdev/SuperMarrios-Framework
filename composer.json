@@ -1,5 +1,5 @@
 {
-    "name": "marrios/api_mvc",
+    "name": "marrios/super-marrios",
     "autoload": {
         "psr-4": {
             "App\\": "app/",
@@ -8,6 +8,7 @@
         }
     },
     "require": {
-        "bramus/router": "~1.6"
+        "bramus/router": "~1.6",
+        "vlucas/phpdotenv": "^5.4"
     }
 }
