@@ -28,7 +28,7 @@ class Loader
 
         if($this->layerName == '' || !$this->_checkLayer($pathLayer))
         {
-            throw new \Exception("Layer path undefined");
+            throw new \Exception("Layer not found: ".$this->layerName);
         }
 
         $this->filePath = $pathLayer."\\".$filePath.".php";
@@ -36,7 +36,7 @@ class Loader
     }
 
     /**
-     * Method that dynamically loads helpers
+     * Method that dynamically loads files
      *
      *  @param String $fileLoad
      *  @return \Exception

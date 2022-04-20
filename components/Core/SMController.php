@@ -23,6 +23,6 @@ class SMController
     public function __construct()
     {
         $this->request          = new Request();
-        $this->helperLoader     = new HelperLoader();
+        $this->helper           = new HelperLoader();
     }
 }
