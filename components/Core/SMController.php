@@ -18,11 +18,17 @@ class SMController
     /**
      * @var Object SM\Modules\Loaders\HelperLoader;
      */
-    public $helperLoader;
+    public $helper;
+
+    /**
+     * @var Object SM\Modules\Http\Response\Response;
+     */
+    public $response;
 
     public function __construct()
     {
         $this->request          = new Request();
         $this->helper           = new HelperLoader();
+        $this->response         = new Response();
     }
 }

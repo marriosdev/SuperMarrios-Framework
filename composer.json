@@ -8,7 +8,7 @@
         }
     },
     "require": {
-        "bramus/router": "~1.6",
-        "vlucas/phpdotenv": "^5.4"
+        "vlucas/phpdotenv": "^5.4",
+        "marrios/router": "^2.0"
     }
 }

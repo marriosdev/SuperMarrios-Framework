@@ -4,59 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bae38940c8e509322e43423846ffb2c",
+    "content-hash": "89a1e60adacd79ae704e3163c04376ff",
     "packages": [
-        {
-            "name": "bramus/router",
-            "version": "1.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bramus/router.git",
-                "reference": "55657b76da8a0a509250fb55b9dd24e1aa237eba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bramus/router/zipball/55657b76da8a0a509250fb55b9dd24e1aa237eba",
-                "reference": "55657b76da8a0a509250fb55b9dd24e1aa237eba",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2.14",
-                "phpunit/php-code-coverage": "~2.0",
-                "phpunit/phpunit": "~4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Bramus": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bram(us) Van Damme",
-                    "email": "bramus@bram.us",
-                    "homepage": "http://www.bram.us"
-                }
-            ],
-            "description": "A lightweight and simple object oriented PHP Router",
-            "homepage": "https://github.com/bramus/router",
-            "keywords": [
-                "router",
-                "routing"
-            ],
-            "support": {
-                "issues": "https://github.com/bramus/router/issues",
-                "source": "https://github.com/bramus/router/tree/1.6.1"
-            },
-            "time": "2021-11-18T19:24:07+00:00"
-        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.0.4",
@@ -118,6 +67,51 @@
                 }
             ],
             "time": "2021-11-21T21:41:47+00:00"
+        },
+        {
+            "name": "marrios/router",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/edmariooliver/Router.git",
+                "reference": "9dbdb3bf993aad9484932e68b1d21daca6ef4500"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/edmariooliver/Router/zipball/9dbdb3bf993aad9484932e68b1d21daca6ef4500",
+                "reference": "9dbdb3bf993aad9484932e68b1d21daca6ef4500",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Marrios\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Marrios Dev",
+                    "email": "edmariooliver@outlook.com"
+                }
+            ],
+            "description": "Route manager",
+            "keywords": [
+                "manager",
+                "mvc",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/edmariooliver/Router/issues",
+                "source": "https://github.com/edmariooliver/Router/tree/v2.0.0"
+            },
+            "time": "2022-05-14T05:02:55+00:00"
         },
         {
             "name": "phpoption/phpoption",

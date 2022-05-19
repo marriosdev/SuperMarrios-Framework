@@ -1,16 +1,10 @@
 <?php
 
-$router = new \Bramus\Router\Router();
+use Marrios\Router\HttpRouter;
+use App\Controllers\Api\Teste;
 
-/**
- * ROTAS
- * 
- * @example $router->get('/', API_NAMESPACE."\HomeController@index");
- */ 
-$router->get('/api/', API_NAMESPACE."\Teste@index");
-$router->post('/api/', API_NAMESPACE."\Teste@index");
-$router->put('/api/', API_NAMESPACE."\Teste@index");
-$router->delete('/api/', API_NAMESPACE."\Teste@index");
+$router = new HttpRouter();
 
-//Vamos!
-$router->run();
+// Set route
+$router->get("/helloworld/{id}", [Teste::class, "index"])->run();
+$router->notFound();

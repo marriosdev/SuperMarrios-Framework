@@ -27,7 +27,7 @@ error_reporting(E_ALL);
 
 if(getenv("DEBUG"))
 {
-    ini_set("display_errora", 1);
+    ini_set("display_errors", 1);
 }else{
-    ini_set("display_errora", 0);
+    ini_set("display_errors", 0);
 }
