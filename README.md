@@ -35,6 +35,7 @@ class TesteController extends SMController
 
     public function index($params)
     {
+        // Carregando o Helper
         $this->helper->load("FirstHelper");
         teste();
     }
@@ -58,6 +59,7 @@ class Teste extends SMController
 
     public function index()
     {
+        // Pegando input recebido na requisição
         $email = $this->request->email;
     }
 }
@@ -78,6 +80,7 @@ class Teste extends SMController
 
     public function index($params)
     {
+        // Retornando uma resposta Json
         return $this->response->make(201, ["Olá, eu sou uma resposta JSON"]);
     }
 }
