@@ -11,7 +11,22 @@ Grande abraço!
 ## 1 - Loader de Helper
 ### Você pode carregar funções de uma arquivo de Helper dentro do seu controller, utilize o:
 ```
-$this->helper->load("HelperName");
+<?php
+
+namespace App\Controllers\Api;
+
+use SM\Core\SMController;
+
+class Teste extends SMController
+{
+
+    public function index($params)
+    {
+        $this->helper->load("FirstHelper");
+        teste();
+    }
+}
+
 ```
 ### Com isso você inclui o arquivo de Helper de forma elegante no seu controller.
 
@@ -19,14 +34,41 @@ $this->helper->load("HelperName");
 
 ## 2 - Acessando inputs de uma request
 ```
-$this->request->nomeInput;
+<?php
+
+namespace App\Controllers\Api;
+
+use SM\Core\SMController;
+
+class Teste extends SMController
+{
+
+    public function index()
+    {
+        $email = $this->request->email;
+    }
+}
 ```
 <hr>
 
 ## 3 - Criando response
 ### O response->make cria uma nova resposta Json
 ```
-return $this->response->make(201, ["Olá, eu sou uma resposta JSON"]);
+<?php
+
+namespace App\Controllers\Api;
+
+use SM\Core\SMController;
+
+class Teste extends SMController
+{
+
+    public function index($params)
+    {
+        return $this->response->make(201, ["Olá, eu sou uma resposta JSON"]);
+    }
+}
+
 ```
 ### O primeiro parâmetro é referente ao status HTTP da resposta, o segundo parâmetro é referente ao conteúdo do corpo da resposta.
 
