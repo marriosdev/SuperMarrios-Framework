@@ -8,8 +8,21 @@ Grande abraço!
 <hr>
 
 ## Doc 
-## 1 - Loader de Helper
+## 1 - Loader de Helper, resumo: É um require_once elegante
 ### Você pode carregar funções de uma arquivo de Helper dentro do seu controller, utilize o:
+
+#### Helpers/FirstHelper.php
+```
+<?php
+
+function teste()
+{
+    echo "RODANDO HELPER";
+}
+```
+
+#### TesteController.php
+
 ```
 <?php
 
@@ -17,7 +30,7 @@ namespace App\Controllers\Api;
 
 use SM\Core\SMController;
 
-class Teste extends SMController
+class TesteController extends SMController
 {
 
     public function index($params)
