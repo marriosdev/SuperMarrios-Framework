@@ -11,7 +11,7 @@ Grande abraço!
 ### Você pode carregar funções de uma arquivo de Helper dentro do seu controller, utilize o:
 
 #### Helpers/FirstHelper.php
-```
+```php
 <?php
 
 function teste()
@@ -22,7 +22,7 @@ function teste()
 
 #### TesteController.php
 
-```
+```php
 <?php
 
 namespace App\Controllers\Api;
@@ -46,7 +46,7 @@ class TesteController extends SMController
 <hr>
 
 ## 2 - Acessando inputs de uma request
-```
+```php
 <?php
 
 namespace App\Controllers\Api;
@@ -67,7 +67,7 @@ class Teste extends SMController
 
 ## 3 - Criando response
 ### O response->make cria uma nova resposta Json
-```
+```php
 <?php
 
 namespace App\Controllers\Api;
