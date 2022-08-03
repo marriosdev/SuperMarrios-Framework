@@ -92,3 +92,4 @@ class Teste extends SMController
 ## 4 - Roteamento
 ### Aqui está a documentação do gerenciador de rotas
 ### https://github.com/edmariooliver/Router
+
