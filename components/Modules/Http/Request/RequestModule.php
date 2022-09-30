@@ -48,7 +48,10 @@ trait RequestModule
     {
         foreach($this->parseInput as $property=>$value)
         {
-            $this->$property = $value;
+            $data = htmlspecialchars($value);
+            $data = strip_tags($data);
+            $data = filter_var($data, FILTER_SANITIZE_SPECIAL_CHARS);
+            $this->$property = $data;
         }
     }
 }
