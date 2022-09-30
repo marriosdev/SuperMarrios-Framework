@@ -51,7 +51,7 @@ class Loader
             require_once($this->filePath);
             return true;
         }else{
-            return throw new \Exception(" not found");
+            throw new \Exception(" not found");
         }
     }
 
