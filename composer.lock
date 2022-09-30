@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89a1e60adacd79ae704e3163c04376ff",
+    "content-hash": "a9bafd22d89781927e2f9c83646ad61e",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -112,6 +112,53 @@
                 "source": "https://github.com/edmariooliver/Router/tree/v2.0.0"
             },
             "time": "2022-05-14T05:02:55+00:00"
+        },
+        {
+            "name": "marrios/validators",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/edmariooliver/Validadores.git",
+                "reference": "79e380572a794fbafc13cf5c6463f1a5c352f8f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/edmariooliver/Validadores/zipball/79e380572a794fbafc13cf5c6463f1a5c352f8f0",
+                "reference": "79e380572a794fbafc13cf5c6463f1a5c352f8f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DV\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Marrios Dev",
+                    "email": "edmariooliver@outlook.com"
+                }
+            ],
+            "description": "A simple data validator",
+            "keywords": [
+                "data validator",
+                "validators"
+            ],
+            "support": {
+                "issues": "https://github.com/edmariooliver/Validadores/issues",
+                "source": "https://github.com/edmariooliver/Validadores/tree/v0.1.0"
+            },
+            "time": "2022-07-30T22:10:23+00:00"
         },
         {
             "name": "phpoption/phpoption",

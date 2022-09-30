@@ -93,3 +93,6 @@ class Teste extends SMController
 ### Aqui está a documentação do gerenciador de rotas
 ### https://github.com/edmariooliver/Router
 
+## 5 - Validadores de dados
+### Aqui está a documentação dos validadores
+### https://github.com/edmariooliver/Validadores

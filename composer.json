@@ -9,6 +9,7 @@
     },
     "require": {
         "vlucas/phpdotenv": "^5.4",
-        "marrios/router": "^2.0"
+        "marrios/router": "^2.0",
+        "marrios/validators": "^0.1.0"
     }
 }
