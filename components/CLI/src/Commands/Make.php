@@ -42,4 +42,37 @@ class Make extends Command
             echo MessageError::send("You need to pass the name of the new command");
         }
     }
+
+        /**
+     * Criando um novo arquivo na camada de models
+     */
+    public function model(\StdClass $command)
+    {
+        $pathFile    = BASE_PATH."\\Models\\";
+        $fileName    = $command->arg1;
+
+        echo MessageNormal::send("Creating Model...");
+        sleep(1);
+
+        if(isset($command->arg1)){
+            if($this->makeFile($pathFile, $fileName))
+            {
+                //Transferindo conteudo de um arquivo para outro
+                echo MessageSuccess::send("OK!");
+                $fromFile = PATH_ASSETS."\ContentModel.txt";
+                $toFile   = $pathFile.$fileName.".php";
+                $file       = fopen($toFile, "wb");
+                $content    = file_get_contents($fromFile);
+        
+                $content    = str_replace("nameClass", $command->arg1, $content);
+                fwrite($file, $content);
+                fclose($file);
+            } else {
+                echo MessageError::send("The command already exists");
+            }
+        } else {
+            echo MessageError::send("You need to pass the name of the new command");
+        }
+    }
+
 } 
