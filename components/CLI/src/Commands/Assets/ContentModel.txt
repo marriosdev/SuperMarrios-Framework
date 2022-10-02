@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Controllers;
+
+class nameClass
+{
+
+    public function index()
+    {
+    }
+}
