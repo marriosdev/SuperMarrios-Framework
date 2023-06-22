@@ -63,7 +63,7 @@ class Loader
      */
     private function _checkLayer(String $layerPath)
     {
-        return (file_exists($layerPath)) ? true : false;
+        return file_exists($layerPath);
     }
 
     /**
@@ -74,6 +74,6 @@ class Loader
      */
     private function _checkFile(String $fileName)
     {
-        return (file_exists($fileName)) ? true : false;
+        return file_exists($fileName);
     }
 } 
